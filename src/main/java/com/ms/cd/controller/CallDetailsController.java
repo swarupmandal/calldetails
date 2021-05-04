@@ -23,7 +23,7 @@ public class CallDetailsController {
 	@Autowired
 	private CallDetailsService callDetailsService;
 	
-	@GetMapping(value = "/customer/{phonrNo}/calldetails", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "/customer/{phoneNo}/calldetails", produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<CallDetailsDto> getCustomerCallDetails(@PathVariable long phoneNo){
 		
 		logger.info("CallDetails request for customer ",phoneNo);
