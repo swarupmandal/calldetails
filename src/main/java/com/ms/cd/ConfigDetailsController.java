@@ -10,31 +10,31 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigDetailsController {
 
-	@Value("${my.greeting}")
+	@Value("${my.greeting:}")
 	private String greetingMessage;
 
-	@Value("${db.url}")
+	@Value("${db.url:}")
 	private String dbURL;
 	
-	@Value("${my.greeting.cd}")
+	@Value("${my.greeting.cd:}")
 	private String greetingMessageCD;
 
-	@Value("${db.url.cd}")
+	@Value("${db.url.cd:}")
 	private String dbURLCD;
 	
-	@Value("${my.greeting.cd.dev}")
+	@Value("${my.greeting.cd.dev:}")
 	private String greetingMessageCDDEV;
 
-	@Value("${db.url.cd.dev}")
+	@Value("${db.url.cd.dev:}")
 	private String dbURLCDDEV;
 
-	@Value("${spring.datasource.url}")
+	@Value("${spring.datasource.url:}")
 	private String dbUrl;
 	
-	@Value("${spring.datasource.username}")
+	@Value("${spring.datasource.username:}")
 	private String dbUser;
 	
-	@Value("${spring.datasource.password}")
+	@Value("${spring.datasource.password:}")
 	private String dbPassword;	
 	
 	
